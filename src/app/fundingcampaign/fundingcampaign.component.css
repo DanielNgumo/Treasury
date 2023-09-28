@@ -1,0 +1,48 @@
+
+.box-1{
+    max-width: 500px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    margin:auto;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.box-1:hover{
+    box-shadow: 0px 0px 10px 0px rgba(202, 82, 82, 0.75);
+}
+.pcolor{
+    text-decoration: wavy;
+    color: darkblue;
+    text-align: center;
+    
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #000000;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+}
+.saveButton{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.saveButton:hover{
+    background-color: #45a049;
+}
+.buttons{
+    margin-left: 40%;
+    margin-top: 10px;
+    
+}
