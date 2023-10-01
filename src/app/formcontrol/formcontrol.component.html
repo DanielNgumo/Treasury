@@ -1,16 +1,29 @@
-<div formGroupName="address">
-    <h2>Address</h2>
-  
-    <label for="street">Street: </label>
-    <input id="street" type="text" formControlName="street">
-  
-    <label for="city">City: </label>
-    <input id="city" type="text" formControlName="city">
-  
-    <label for="state">State: </label>
-    <input id="state" type="text" formControlName="state">
-    
-  dfdsg
-    <label for="zip">Zip Code: </label>
-    <input id="zip" type="text" formControlName="zip">
-  </div>
+<form [formGroup]="paymentMethod">
+  <mat-card class="box-1">
+    <div formGroupName="address">
+      <div class="paymentMethod">
+        <h2>Create Payment Method.</h2>
+      </div>
+<br>
+<br>
+<br>
+
+      <label for="methodName">Method name: <br>
+      </label>
+      <input id="methodName" type="text" formControlName="methodName">
+      <br>
+      <br>
+      <label for="zip">Specify how: <br>
+       </label>
+      <input id="zip" type="text" formControlName="zip">
+    </div>
+    <mat-card-actions>
+      <button mat-button routerLink="/createaccount"
+       routerLinkActive="/createaccount" class="saveButton">SAVE</button>
+    </mat-card-actions>
+    <mat-card-actions>
+      <button mat-button routerLink="/fundingcampaign"
+       routerLinkActive="/fundingcampaign" class="saveButton">Back</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-registrationform',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./registrationform.component.css']
 })
 export class RegistrationformComponent {
+newRegistration=new FormGroup({
 
+})
 }

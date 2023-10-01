@@ -1,0 +1,41 @@
+<form [formGroup]="expenses">
+    <mat-card class="box-1">
+        <div formGroupName="address">
+            <div class="paymentMethod">
+                <h2>Save expenses</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="pledge">
+                <label for="methodName">Amount: <br>
+                </label>
+                <input id="amount" type="number" formControlName="amount">
+                <br>
+                <br>
+                <label for="purpose">Purpose: <br>
+                    <br>
+                </label>
+                <input id="purpose" type="text" formControlName="purpose">
+                <br>
+
+                <label for="details">Details: <br>
+                    <br>
+                </label>
+                <input id="details" type="text" formControlName="details" width="300px">
+            </div>
+            <label for="witness">Enter names of those who witnessed: <br>
+            </label>
+            <input id="witness" type="text" formControlName="witness">
+        </div>
+        <mat-card-actions>
+            <button mat-button routerLink="/contribution" routerLinkActive="/contribution"
+                class="saveButton">SAVE</button>
+        </mat-card-actions>
+        <mat-card-actions>
+            <button mat-button routerLink="/contribution" routerLinkActive="/contribution"
+                class="saveButton">Submit</button>
+        </mat-card-actions>
+   
+    </mat-card>
+</form>

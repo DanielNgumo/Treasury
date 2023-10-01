@@ -1,0 +1,29 @@
+<form [formGroup]="account">
+    <mat-card class="box-1">
+      <div formGroupName="address">
+        <div class="paymentMethod">
+          <h2>Create account.</h2>
+        </div>
+  <br>
+  <br>
+  <br>
+  
+        <label for="methodName">Account name: <br>
+        </label>
+        <input id="accname" type="text" formControlName="accname">
+        <br>
+        <br>
+        <label for="accno">Account Number: <br>
+         </label>
+        <input id="accno" type="number" formControlName="accno">
+      </div>
+      <mat-card-actions>
+        <button mat-button routerLink="/pledgeregistration"
+         routerLinkActive="/pledgeregistration" class="saveButton">SAVE</button>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-button routerLink="/formcontrol"
+         routerLinkActive="/formcontrol" class="saveButton">Back</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>

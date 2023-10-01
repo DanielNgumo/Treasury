@@ -1,0 +1,54 @@
+<form [formGroup]="contribution">
+    <mat-card class="box-1">
+        <div formGroupName="address">
+            <div class="paymentMethod">
+                <h2>Enter a contribution.</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="personalDetails">
+                <h3>Fill the details below to register for a pledge.</h3>
+                <label for="methodName">Full name: <br>
+                </label>
+                <input id="accname" type="text" formControlName="fullName">
+                <br>
+                <br>
+                <label for="phoneNumber">Phone Number: <br>
+                    <br>
+                </label>
+                <input id="phoneNumber" type="number" formControlName="phoneNumber">
+                <br>
+                <br>
+
+                <label for="email">Email:
+                    <br>
+                </label>
+                <input id="email" type="email" formControlName="email">
+                <br>
+                <br>
+
+            </div>
+
+            <label for="email">Enter amount: <br>
+            </label>
+            <input id="amount" type="number" formControlName="amount">
+            <br>
+            <br>
+            <label for="contributionmethod">Contribution Method</label>
+            <select name="contributionmethod" id="contributionmethod">
+                <option value="Mpesa">Mpesa</option>
+                <option value="Mpesa">Cash</option>
+                <option value="Mpesa">Other modes</option>
+            </select>
+        </div>
+        <mat-card-actions>
+            <button mat-button routerLink="/expenses" routerLinkActive="/expenses"
+                class="saveButton">SAVE</button>
+        </mat-card-actions>
+        <mat-card-actions>
+            <button mat-button routerLink="/pledgeregistration" routerLinkActive="/pledgeregistration"
+                class="saveButton">Back</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

@@ -1,5 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatNativeDateModule} from '@angular/material/core';
 import { CreatepaymentmethodComponent } from './createpaymentmethod/createpaymentmethod.component';
 import { FormcontrolComponent } from './formcontrol/formcontrol.component';
+import { DateComponent } from './date/date.component';
+import { CreateaccountComponent } from './createaccount/createaccount.component';
+import { PledgeregistrationComponent } from './pledgeregistration/pledgeregistration.component';
+import { ContributionComponent } from './contribution/contribution.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +33,11 @@ import { FormcontrolComponent } from './formcontrol/formcontrol.component';
     FundingcampaignComponent,
     CreatepaymentmethodComponent,
     FormcontrolComponent,
+    CreateaccountComponent,
+    PledgeregistrationComponent,
+    ContributionComponent,
+    ExpensesComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -42,6 +53,8 @@ import { FormcontrolComponent } from './formcontrol/formcontrol.component';
     MatIconModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+
+    
     ],
   providers: [],
   bootstrap: [AppComponent],

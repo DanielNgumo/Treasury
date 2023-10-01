@@ -7,7 +7,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./formcontrol.component.css']
 })
 export class FormcontrolComponent {
-  profileForm = new FormGroup({
+  paymentMethod = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
     

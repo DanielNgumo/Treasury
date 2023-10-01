@@ -4,6 +4,10 @@ import { RegistrationformComponent } from './registrationform/registrationform.c
 import { CreategroupComponent } from './creategroup/creategroup.component';
 import { FundingcampaignComponent } from './fundingcampaign/fundingcampaign.component';
 import { FormcontrolComponent } from './formcontrol/formcontrol.component';
+import { CreateaccountComponent } from './createaccount/createaccount.component';
+import { PledgeregistrationComponent } from './pledgeregistration/pledgeregistration.component';
+import { ContributionComponent } from './contribution/contribution.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/creategroup', pathMatch: 'full' },
@@ -11,6 +15,10 @@ const routes: Routes = [
   { path: 'registrationform', component: RegistrationformComponent },
   { path: 'fundingcampaign', component: FundingcampaignComponent },
   { path: 'formcontrol', component: FormcontrolComponent },
+  {path: 'createaccount', component: CreateaccountComponent},
+  {path: 'pledgeregistration', component: PledgeregistrationComponent},
+  {path: 'contribution', component:ContributionComponent},
+  {path: 'expenses', component: ExpensesComponent}
 ];
 
 @NgModule({

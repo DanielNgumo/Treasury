@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 interface Food {
   value: string;
@@ -17,4 +18,7 @@ export class FundingcampaignComponent {
     {value: 'Direct-1', viewValue: 'Direct'},
     {value: 'Otherform', viewValue: 'Other form'},
   ];
+  newFundingCampain=new FormGroup({
+
+  })
 }
